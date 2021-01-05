@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="149" id="7FI-xE-qTb" customClass="IssueTableViewCell" customModule="MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7FI-xE-qTb" id="sEN-mN-AvM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting error while uploading files to firebase" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mw7-jh-PoI" userLabel="titleLabel">
+                        <rect key="frame" x="10" y="10" width="363" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="yQl-1n-0Vk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am looing to implement google sign in I am looing to implement google sign in" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-hr-suu" userLabel="bodyLabel">
+                        <rect key="frame" x="10" y="35" width="363" height="64"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX4-lN-f1p">
+                        <rect key="frame" x="10" y="104" width="363" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Njc-Xq-eiP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mw7-jh-PoI" firstAttribute="leading" secondItem="sEN-mN-AvM" secondAttribute="leading" constant="10" id="3RA-Vk-YvN"/>
+                    <constraint firstAttribute="bottom" secondItem="IX4-lN-f1p" secondAttribute="bottom" constant="10" id="GI6-SD-mNA"/>
+                    <constraint firstAttribute="trailing" secondItem="IX4-lN-f1p" secondAttribute="trailing" constant="10" id="N8k-Z6-ZNl"/>
+                    <constraint firstItem="7ot-hr-suu" firstAttribute="leading" secondItem="sEN-mN-AvM" secondAttribute="leading" constant="10" id="TZx-2C-PsG"/>
+                    <constraint firstItem="7ot-hr-suu" firstAttribute="top" secondItem="mw7-jh-PoI" secondAttribute="bottom" constant="5" id="Z68-Vc-l4I"/>
+                    <constraint firstAttribute="trailing" secondItem="7ot-hr-suu" secondAttribute="trailing" constant="10" id="a3x-ns-iVo"/>
+                    <constraint firstItem="IX4-lN-f1p" firstAttribute="leading" secondItem="sEN-mN-AvM" secondAttribute="leading" constant="10" id="aQl-Nw-Zfr"/>
+                    <constraint firstAttribute="trailing" secondItem="mw7-jh-PoI" secondAttribute="trailing" constant="10" id="dN4-4s-dBZ"/>
+                    <constraint firstItem="mw7-jh-PoI" firstAttribute="top" secondItem="sEN-mN-AvM" secondAttribute="top" constant="10" id="eAf-eb-N51"/>
+                    <constraint firstItem="IX4-lN-f1p" firstAttribute="top" secondItem="7ot-hr-suu" secondAttribute="bottom" constant="5" id="yyi-zm-Dfb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="7ot-hr-suu" id="1qW-eO-b6q"/>
+                <outlet property="dateLabel" destination="IX4-lN-f1p" id="svT-LA-J5O"/>
+                <outlet property="titleLabel" destination="mw7-jh-PoI" id="eio-Jt-Ki6"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="287.27678571428572"/>
+        </tableViewCell>
+    </objects>
+</document>
